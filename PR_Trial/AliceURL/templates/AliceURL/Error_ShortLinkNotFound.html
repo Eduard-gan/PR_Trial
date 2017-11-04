@@ -1,0 +1,8 @@
+{% extends "Base.html" %} {% block content %}
+
+<h1>Не понимаем о чем идет речь.</h1>
+<p>О сокращенной ссылке<b> {{ request.META.HTTP_HOST }}/{{ code }}</b> нам ничего не известно</p>
+
+<a href="/" class="btn btn-primary">Вернуться на главную</a>
+
+{% endblock %}

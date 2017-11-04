@@ -1,0 +1,12 @@
+{% extends "Base.html" %} {% block content %}
+
+<form action="/login/" method="post">
+    {% csrf_token %}
+    <input type="text" id="id_username" name="username" class="form-control" placeholder="Логин" autofocus maxlength="32" required >
+    <br>
+    <input type="password" id="id_password" name="password" class="form-control" placeholder="Пароль" required>
+    <br>
+    <input type="submit" value="Войти" class="btn btn-primary">
+</form>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "Base.html" %} {% block content %}
+
+<h1>Всё готово!</h1>
+<p><b>Ваша ссылка:</b> {{ target_link }}</p>
+<p><b>Наша ссылка:</b> {{ request.META.HTTP_HOST }}/{{ code }}</p>
+
+<a href="/" class="btn btn-primary">Еще</a>
+
+{% endblock %}
